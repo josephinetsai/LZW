@@ -1,5 +1,7 @@
-use scanner, creates a String that is the input file 
-runs lzw on the input file, outputs an array of string ie. a,b,c,ab,ca,abca,bacb,etc. called output
-converts array into 97,98,98,256,258, etc. called output 1 
-changes output 1 into that array binaries based on output1
+in constructor: use scanner, 
+runs lzw on the input file, outputs an array of string called 'outputString'ie. a,b,c,ab,ca,abca,bacb,etc.
+
+in compress:
+converts 'outputString' into corresponding ascii values: 97,98,98,256,258, etc. called outputInts
+changes 'outputString' into that array of Stringbinaries based on outputInts using Integer.toBinaryString
 uses BinaryOut class to output a binary.dat file based on output
